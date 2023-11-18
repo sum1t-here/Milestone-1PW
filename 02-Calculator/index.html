@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <p>
+      Create a javascript program that takes in two numbers and a string
+      operator. Make use of a switch statement to perform the operation on the
+      two numbers.
+    </p>
+
+    The calculator function should:
+
+    <ul>
+      <li>
+        Take in two numbers, num1 and num2, and a string representing a
+        mathematical operator
+      </li>
+      <li>Use a switch statement to determine which</li>
+      operation to perform based on the value of the operator
+      <li>
+        If the operator is one of the four valid operators (+, -, *, /), perform
+        the corresponding mathematical operation and store the result in a
+        variable called result
+      </li>
+      <li>
+        If the operator is not one of the valid operators, log "Invalid
+        operator" to the console.
+      </li>
+    </ul>
+    <script>
+      function calculator(num1, num2, operator) {
+        let result;
+
+        switch (operator) {
+          case '+':
+            result = num1 + num2;
+            break;
+          case '-':
+            result = num1 - num2;
+            break;
+          case '*':
+            result = num1 * num2;
+            break;
+          case '/':
+            result = num1 / num2;
+            break;
+          default:
+            console.log('invalid operator');
+            return;
+        }
+        console.log(`${num1} ${operator} ${num2} = ${result}`);
+      }
+
+      //  EXAMPLE
+      calculator(9, 5, '*');
+      calculator(10, 5, '+');
+      calculator(9, 5, '-');
+      calculator(9, 3, '/');
+      calculator(9, 5, '**');
+
+      //   Output
+
+      //   9 * 5 = 45
+      //   10 + 5 = 15
+      //   9 - 5 = 4
+      //   9 / 3 = 3
+      //   invalid operator
+    </script>
+  </body>
+</html>
