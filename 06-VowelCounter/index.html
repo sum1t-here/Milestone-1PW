@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vowel Counter</title>
+  </head>
+  <body>
+    <script>
+      function CountVowels(name) {
+        const vowels = 'aeiouAEIOU';
+        let vowelCount = 0;
+        for (let i = 0; i < name.length; i++) {
+          if (vowels.includes(name[i])) {
+            vowelCount++;
+          }
+        }
+        console.log(`Number of vowels in ${name} is ${vowelCount}`);
+      }
+
+      CountVowels('John');
+      CountVowels('Doe');
+    </script>
+  </body>
+</html>
