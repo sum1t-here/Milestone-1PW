@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Highest Marks Finder</title>
+  </head>
+  <body>
+    <script>
+      // Example marks array
+      const marks = [85, 92, 78, 95, 89];
+
+      const highestMarks = marks.reduce(
+        (max, current) => (current > max ? current : max),
+        marks[0]
+      );
+
+      console.log(`The highest marks in the class: ${highestMarks}`);
+    </script>
+  </body>
+</html>
