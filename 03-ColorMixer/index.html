@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Mixer</title>
+  </head>
+  <body>
+    <script>
+      function mixColors(color1, color2) {
+        let resultingColor;
+
+        switch (color1.toLowerCase()) {
+          case 'red':
+            switch (color2.toLowerCase()) {
+              case 'blue':
+                resultingColor = 'purple';
+                break;
+              case 'yellow':
+                resultingColor = 'orange';
+                break;
+              default:
+                resultingColor = 'Invalid color combination';
+            }
+            break;
+
+          case 'blue':
+            switch (color2.toLowerCase()) {
+              case 'red':
+                resultingColor = 'purple';
+                break;
+              case 'yellow':
+                resultingColor = 'green';
+                break;
+              default:
+                resultingColor = 'Invalid color combination';
+            }
+            break;
+
+          case 'yellow':
+            switch (color2.toLowerCase()) {
+              case 'red':
+                resultingColor = 'orange';
+                break;
+              case 'blue':
+                resultingColor = 'green';
+                break;
+              default:
+                resultingColor = 'Invalid color combination';
+            }
+            break;
+
+          default:
+            resultingColor = 'Invalid color combination';
+        }
+
+        console.log(`Resulting color: ${resultingColor}`);
+      }
+
+      // Example usage:
+      mixColors('red', 'blue'); // Output: Resulting color: purple
+      mixColors('red', 'yellow'); // Output: Resulting color: orange
+      mixColors('blue', 'yellow'); // Output: Resulting color: green
+      mixColors('green', 'purple'); // Output: Resulting color: Invalid color combination
+    </script>
+  </body>
+</html>
