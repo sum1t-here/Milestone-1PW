@@ -1,0 +1,29 @@
+body {
+  background-color: rgb(30, 30, 30);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.heroSection {
+  background-color: rgb(59, 126, 59);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 500px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle {
+  height: 40px;
+  width: 80px;
+}
