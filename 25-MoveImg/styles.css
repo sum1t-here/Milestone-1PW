@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+#movingImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.1s ease;
+}
